@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wedding Invitation - Quang Cau & Thu Hien </title>
+    <link rel=icon type=image/png sizes=16x16 href="wedding.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wedding Invitation - Quang Cau & Thu Hien" />
+    <meta name="keywords" content="wedding" />
+    <meta name="author" content="tungbui198" />
+    <meta name="format-detection" content="telephone=no">
+    <!-- Facebook integration -->
+    <meta property="og:site_name" content="Quang Cau & Thu Hien">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wedding Invitation - Quang Cau & Thu Hien" />
+    <meta property="og:description" content="Quang Cau & Thu Hien - Our wedding date: 10-12-2024" />
+    <meta property="og:url" content="https://quangcau-thuhien.wedding2024.online" />
+    <meta property="og:image" content="https://i.imgur.com/ar8bN4G.jpg" />
+
+    <link
+        href='https://fonts.googleapis.com/css?family=Pacifico%7CWork+Sans:400,300,600,400italic,700%7CAmatic+SC:400,700&amp;subset=latin-ext'
+        rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="loader"></div>
+    <div class="main">
+        <!-- Navigation -->
+        <nav class="navbar" data-spy="affix" data-options="scrolltop:false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div id="logo"><a href="#">Album</a></div>
+                    </div>
+                    <div class="col-xs-10 menu-2 col-sm-8">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="page-scroll" href="index.html">Trang chủ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Section Gallery -->
+        <section id="gallery" class="section gallery" style="padding: 5em 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center heading">
+                        <h2>Ảnh của chúng tôi</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="grid grid--margin" id="album">
+                            <div class="grid-sizer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section banner-bottom -->
+        <section class="bg section banner banner_bottom">
+            <div class="overlay"></div>
+            <div class="seperator seperator-up">
+                <img src="images/seperator/layer-3.png" alt="seperator">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center footer-note">
+                        <h2>Thank You</h2>
+                        <p>Quang Cầu ❤️ Thu Hiền</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seperator">
+                <img src="images/seperator/layer-5.png" alt="seperator">
+            </div>
+        </section>
+    </div>
+
+    <!-- Load album -->
+    <script>
+        for (let i = 1;i < 58; i++){
+            html = `<div class="grid-item grid-item--width">
+                <a href="images/album/album-${i}.jpg" data-lightbox="roadtrip" style="width:100%; display:block;">
+                    <img loading="lazy" src="images/album-thumbs/album-${i}.jpg" alt="gallery" style="width:100%" class="lazyload">
+                </a>
+            </div>`;
+            document.getElementById("album").innerHTML += html;
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
