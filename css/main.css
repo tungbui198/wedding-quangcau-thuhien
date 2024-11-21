@@ -1741,8 +1741,8 @@ footer .copyright .block {
     border: none;
     color: #333;
     font-size: 1em;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 10px 10px;
+    margin: 5px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -1773,8 +1773,8 @@ footer .copyright .block {
 }
 
 .timeline-title {
-    font-family: 'Great Vibes', cursive;
-    font-size: 2em;
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 1.5em;
     color: #a78c32;
 }
 
@@ -1843,13 +1843,13 @@ footer .copyright .block {
     }
 
     .timeline-icon {
-        margin-right: 40px;
+        margin-right: 30px;
         flex-shrink: 0;
     }
 
     .timeline-icon img {
-        width: 60px; /* Smaller icon size for mobile */
-        height: 60px;
+        width: 50px; /* Smaller icon size for mobile */
+        height: 50px;
     }
 
     .timeline-content {
