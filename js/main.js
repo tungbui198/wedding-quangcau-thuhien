@@ -197,6 +197,9 @@
                 "images/slider/slider_5.jpg",
                 "images/slider/slider_6.jpg",
                 "images/slider/slider_7.jpg",
+                "images/slider/slider_8.jpg",
+                "images/slider/slider_9.jpg",
+                "images/slider/slider_10.jpg",
             ],
             interval: 5000,
         }, options);
@@ -273,15 +276,14 @@
 
         var audioPlayer = document.getElementById('audioPlayer');
         var audioSources = [
-            'audio/ItsYou.mp3',
-            'https://cdn.biihappy.com/ziiweb/website/66d92eaf3b20bda60a0071dc/66d932bac9603ef7a70372b9.mp3',
             'https://cdn.biihappy.com/ziiweb/wedding-musics/BeautifulInWhite-ShaneFilan-524801.mp3',
+            'https://cdn.biihappy.com/ziiweb/website/66d92eaf3b20bda60a0071dc/66d932bac9603ef7a70372b9.mp3',
             'https://cdn.biihappy.com/ziiweb/wedding-musics/AThousandYears-christinaperri-6430911.mp3',
             'https://cdn.biihappy.com/ziiweb/wedding-musics/MarryYou-BrunoMars-6450059.mp3',
             'https://cdn.biihappy.com/ziiweb/website/66d12da73b1d667fd80021d9/66d485236c1871959509467e.mp3',
             'https://cdn.biihappy.com/ziiweb/wedding-musics/TaLaCuaNhau-DongNhiOngCaoThang.mp3'
         ];
-        var currentTrackIndex = getRandomTrackIndex();
+        var currentTrackIndex = 0;
 
         audioPlayer.src = audioSources[currentTrackIndex];
         audioPlayer.volume = 0.3;
@@ -370,7 +372,7 @@
         donateModal();
         $('#header').backgroundSlider();
         initAudioPlayer();
-        // disableDeveloperMode();
+        disableDeveloperMode();
     });
 
 }());
