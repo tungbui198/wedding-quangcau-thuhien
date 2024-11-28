@@ -362,6 +362,29 @@
         });
     }
 
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    }
+
+    // Function to handle the sliding effect
+    function slideInEffect() {
+        // Scroll event listener to trigger effect
+        $(window).on('scroll', function () {
+            $('.effect-item').each(function () {
+                if (isElementInViewport(this) && !$(this).hasClass('visible')) {
+                    $(this).addClass('visible');
+                }
+            });
+        });
+
+        // Initial check for elements already in the viewport
+        $(window).trigger('scroll');
+    }
+
     $(function () {
         pageScroll();
         mobileMenuOutsideClick();
@@ -373,6 +396,7 @@
         $('#header').backgroundSlider();
         initAudioPlayer();
         disableDeveloperMode();
+        slideInEffect();
     });
 
 }());
