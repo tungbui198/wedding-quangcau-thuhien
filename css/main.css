@@ -1958,17 +1958,10 @@ footer .copyright .block {
 }
 
 /* Video  */
-.video-section {
-    padding: 60px 0;
-    /* Add padding for spacing */
-    background-color: #f8f9fa;
-    /* Light background for contrast */
-}
 
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
