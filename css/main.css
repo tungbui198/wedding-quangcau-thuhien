@@ -951,38 +951,68 @@ img {
     }
 }
 
-.groom,
-.bride {
-    width: 165px;
-    height: 165px;
-    margin: 0 auto 10px;
+.floral-frame-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 768px) {
-
-    .groom,
-    .bride {
-        float: left;
+@keyframes rotateFloralFrame {
+    0% {
+        transform: rotate(0deg);
     }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.floral-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotateFloralFrame 15s linear infinite;
+}
+
+.floral-pattern {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.groom,
+.bride {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 135px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .groom img,
 .bride img {
-    width: 165px;
-    height: 165px;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-    .groom {
+    .floral-groom {
         float: right;
         margin-right: 5px;
     }
-}
 
-@media only screen and (min-width: 768px) {
-    .bride {
+    .floral-bride {
         float: left;
         margin-left: 5px;
     }
